@@ -9,38 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12c81996-64a3-4a51-bfbd-2b1e3845d861" name="Default Changelist" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/di/RepositoryModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIDAttributesTypeConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIDTypeConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIMArtistTypeConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIMPriceAttributesTypeConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIMReleaseDateTypeConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/repository/MainRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/ui/adapter/EntryAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/ui/main/MainViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/entry_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/AppleGames.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AppleGames.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+    <list default="true" id="12c81996-64a3-4a51-bfbd-2b1e3845d861" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/MyApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/MyApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/di/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/di/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/model/Entry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/model/Entry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/network/FeedApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/network/FeedService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/EntryDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/EntryDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/EntryDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/EntryDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIconTypeConverter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/persistence/converters/EntryIconTypeConverter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/build-attribution/androidGradlePluginAttributionData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/ui/adapter/EntryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/prasan/applegames/ui/adapter/EntryAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,17 +126,29 @@
       <option name="presentableId" value="Default" />
       <updated>1593836375505</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1593847442743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593847442743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="739" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1593846087377">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="739" y="249" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1593846087377" />
-    <state x="344" y="130" key="CommitChangelistDialog2" timestamp="1593836533153">
+    <state x="344" y="130" key="CommitChangelistDialog2" timestamp="1593847441966">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="344" y="130" key="CommitChangelistDialog2/0.23.1920.1006@0.23.1920.1006" timestamp="1593836533153" />
+    <state x="344" y="130" key="CommitChangelistDialog2/0.23.1920.1006@0.23.1920.1006" timestamp="1593847441966" />
     <state width="1878" height="231" key="GridCell.Tab.0.bottom" timestamp="1593837636210">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -182,6 +165,10 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state width="1878" height="231" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1593837636209" />
+    <state x="560" y="266" key="Vcs.Push.Dialog.v2" timestamp="1593847588171">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="560" y="266" key="Vcs.Push.Dialog.v2/0.23.1920.1006@0.23.1920.1006" timestamp="1593847588171" />
     <state x="625" y="245" width="670" height="676" key="search.everywhere.popup" timestamp="1593846650976">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

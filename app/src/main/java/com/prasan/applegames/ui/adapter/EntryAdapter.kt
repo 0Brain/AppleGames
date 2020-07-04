@@ -38,7 +38,8 @@ class EntryAdapter : RecyclerView.Adapter<EntryAdapter.ViewHolder>() {
             val entryPrice = itemView.findViewById(R.id.game_price) as TextView
             val url = entry.image[adapterPosition].label
             Glide.with(itemView).load(url).into(entryImage)
-
+            entryName.text = entry.name.label
+            entryPrice.text = entry.price.attributes.amount
         }
     }
 }
