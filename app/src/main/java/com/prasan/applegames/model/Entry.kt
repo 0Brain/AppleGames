@@ -14,47 +14,56 @@ import kotlinx.android.parcel.RawValue
 @Entity
 @JsonClass(generateAdapter = true)
 data class Entry(
-    @NonNull @PrimaryKey @ColumnInfo(name = "id") val id:@RawValue ID,
-    @field:Json(name = "im:name")val name: @RawValue Icon,
-    @field:Json(name = "rights")val rights: @RawValue Icon? = null,
-    @field:Json(name = "im:price")val price: @RawValue IMPrice,
-    @field:Json(name = "im:image")val image: @RawValue List<IMImage>,
-    @field:Json(name = "im:artist")val artist: @RawValue IMArtist,
-    @field:Json(name = "title")val title: @RawValue Icon,
-    @field:Json(name = "im:releaseDate")val imReleaseDate: @RawValue IMReleaseDate
+    @NonNull @PrimaryKey @ColumnInfo(name = "id") val id: ID,
+    @field:Json(name = "im:name")val name: Icon,
+    @field:Json(name = "rights")val rights: Icon? = null,
+    @field:Json(name = "im:price")val price: IMPrice,
+    @field:Json(name = "im:image")val image:  List<IMImage>,
+    @field:Json(name = "im:artist")val artist: IMArtist,
+    @field:Json(name = "title")val title: Icon,
+    @field:Json(name = "im:releaseDate")val imReleaseDate: IMReleaseDate
 ): Parcelable {
 
+    @Parcelize
     data class ID (
         @field:Json(name = "attributes")val attributes: IDAttributes
-    )
+    ):Parcelable
 
-    data class IDAttributes (
-        @field:Json(name = "im:id")val imID: String
-    )
-
+    @Parcelize
     data class Icon(
         @field:Json(name = "label")val label: String
-    )
+    ):Parcelable
 
+
+    @Parcelize
     data class IMPrice (
         @field:Json(name = "attributes")val attributes: IMPriceAttributes
-    )
+    ):Parcelable
 
+    @Parcelize
+    data class IDAttributes (
+        @field:Json(name = "im:id")val imID: String
+    ):Parcelable
+
+    @Parcelize
     data class IMPriceAttributes (
         @field:Json(name = "amount")val amount: String
-    )
+    ):Parcelable
 
+    @Parcelize
     data class IMImage (
         @field:Json(name = "label")val label: String
-    )
+    ):Parcelable
 
+    @Parcelize
     data class IMArtist (
         @field:Json(name = "label")val label: String
-    )
+    ):Parcelable
 
+    @Parcelize
     data class IMReleaseDate (
         @field:Json(name = "label")val label: String,
         @field:Json(name = "attributes")val attributes: Icon
-    )
+    ):Parcelable
 
 }

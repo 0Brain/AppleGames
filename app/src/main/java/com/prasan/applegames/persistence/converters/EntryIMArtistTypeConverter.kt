@@ -4,23 +4,22 @@ import androidx.room.TypeConverter
 import com.prasan.applegames.model.Entry
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
-import javax.inject.Inject
 
-class EntryIconTypeConverter {
+class EntryIMArtistTypeConverter {
 
     private val moshi:Moshi by lazy {
         Moshi.Builder().build()
     }
 
     @TypeConverter
-    fun fromIconToString(value:Entry.Icon):String?{
-        val adapter: JsonAdapter<Entry.Icon> = moshi.adapter(Entry.Icon::class.java)
+    fun fromIconToString(value: Entry.IMArtist):String?{
+        val adapter: JsonAdapter<Entry.IMArtist> = moshi.adapter(Entry.IMArtist::class.java)
         return adapter.toJson(value)
     }
 
     @TypeConverter
-    fun fromStringToIcon(value:String):Entry.Icon?{
-        val adapter:JsonAdapter<Entry.Icon> = moshi.adapter(Entry.Icon::class.java)
+    fun fromStringToIcon(value:String): Entry.IMArtist?{
+        val adapter: JsonAdapter<Entry.IMArtist> = moshi.adapter(Entry.IMArtist::class.java)
         return adapter.fromJson(value)
     }
 }

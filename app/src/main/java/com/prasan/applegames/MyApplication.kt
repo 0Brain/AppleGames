@@ -6,14 +6,18 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class MyApplication: Application() {
-    private lateinit var context:Context
+
+
+    companion object{
+        private lateinit var context:Context
+        fun getContext():Context{
+            return context
+        }
+    }
 
     override fun onCreate() {
         super.onCreate()
         context = applicationContext
     }
 
-    fun getContext():Context{
-        return context
-    }
 }

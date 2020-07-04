@@ -15,6 +15,6 @@ interface EntryDao {
     fun insertEntryList(entryList:List<Entry>)
 
     @Query("SELECT * FROM Entry")
-    fun getEntryList():LiveData<List<Entry>>
+    fun getEntryList():List<Entry>
 
 }

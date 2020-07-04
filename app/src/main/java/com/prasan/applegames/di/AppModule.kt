@@ -2,6 +2,7 @@ package com.prasan.applegames.di
 
 import android.content.Context
 import androidx.room.Room
+import com.prasan.applegames.persistence.EntryDao
 import com.prasan.applegames.persistence.EntryDatabase
 import com.squareup.moshi.Moshi
 import dagger.Module
@@ -25,5 +26,11 @@ object AppModule {
             "note_database"
         ).fallbackToDestructiveMigration()
             .build()
+    }
+
+    @Singleton
+    @Provides
+    fun provideEntryDao(database: EntryDatabase):EntryDao{
+        return database.entryDao()
     }
 }
