@@ -1,30 +1,40 @@
 package com.prasan.applegames.di
 
-import com.prasan.applegames.network.FeedService
+import com.prasan.applegames.network.GameApi
+import com.prasan.applegames.network.HttpRequestInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.components.ApplicationComponent
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
 @Module
-@InstallIn(ActivityComponent::class)
+@InstallIn(ApplicationComponent::class)
 object NetworkModule {
+    @Provides
+    @Singleton
+    fun provideOkHttpClient(): OkHttpClient {
+        return OkHttpClient.Builder()
+            .addInterceptor(HttpRequestInterceptor())
+            .build()
+    }
 
     @Provides
     @Singleton
-    fun provideRetrofit(): Retrofit {
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://itunes.apple.com/us/rss/newfreeapplications/limit=2/json")
+            .client(okHttpClient)
+            .baseUrl("https://itunes.apple.com")
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
     }
 
     @Provides
     @Singleton
-    fun provideFeedService(retrofit: Retrofit): FeedService {
-        return retrofit.create(FeedService::class.java)
+    fun provideFeedService(retrofit: Retrofit): GameApi {
+        return retrofit.create(GameApi::class.java)
     }
 }

@@ -5,16 +5,16 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.prasan.applegames.model.Entry
+import com.prasan.applegames.model.GameResponse
 
 
 @Dao
 interface EntryDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertEntryList(entryList:List<Entry>)
+    suspend fun insertEntryList(entryList:List<GameResponse.Entry>)
 
     @Query("SELECT * FROM Entry")
-    fun getEntryList():List<Entry>
+    fun getEntryList():List<GameResponse.Entry>
 
 }

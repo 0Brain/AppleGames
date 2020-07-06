@@ -13,7 +13,5 @@ class TimberInitializer:Initializer<Unit> {
         Timber.d("Timber has been initialized")
     }
 
-    override fun dependencies(): MutableList<Class<out Initializer<*>>> {
-        TODO("Not yet implemented")
-    }
+    override fun dependencies(): List<Class<out Initializer<*>>> = emptyList()
 }

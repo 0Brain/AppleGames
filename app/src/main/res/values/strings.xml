@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppleGames</string>
+    <string name="action_list">menu_list</string>
 </resources>

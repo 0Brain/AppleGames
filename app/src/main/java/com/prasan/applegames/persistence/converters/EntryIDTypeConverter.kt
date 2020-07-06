@@ -1,25 +1,22 @@
 package com.prasan.applegames.persistence.converters
 
 import androidx.room.TypeConverter
-import com.prasan.applegames.model.Entry
+import com.prasan.applegames.model.GameResponse
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 
-class EntryIDTypeConverter {
-
-    private val moshi:Moshi by lazy {
-        Moshi.Builder().build()
-    }
+class EntryIdTypeConverter {
+    private val moshi = Moshi.Builder().build()
 
     @TypeConverter
-    fun fromIconToString(value: Entry.ID):String?{
-        val adapter: JsonAdapter<Entry.ID> = moshi.adapter(Entry.ID::class.java)
-        return adapter.toJson(value)
-    }
-
-    @TypeConverter
-    fun fromStringToIcon(value:String): Entry.ID?{
-        val adapter: JsonAdapter<Entry.ID> = moshi.adapter(Entry.ID::class.java)
+    fun fromString(value: String): GameResponse.Id? {
+        val adapter: JsonAdapter<GameResponse.Id> = moshi.adapter(GameResponse.Id::class.java)
         return adapter.fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromInfoType(type: GameResponse.Id): String {
+        val adapter: JsonAdapter<GameResponse.Id> = moshi.adapter(GameResponse.Id::class.java)
+        return adapter.toJson(type)
     }
 }
