@@ -15,6 +15,6 @@ interface EntryDao {
     suspend fun insertEntryList(entryList:List<GameResponse.Entry>)
 
     @Query("SELECT * FROM Entry")
-    fun getEntryList():List<GameResponse.Entry>
+    suspend fun getEntryList():List<GameResponse.Entry>
 
 }
